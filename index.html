@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-sm top">
+        <img src="./img/logo-TecLP.png" class="img-fluid cabecera" style="float: left;" alt="Responsive image">
+        <img src="./img/logo-TecNM.png" class="img-fluid cabecera " style="float: right;" alt="Responsive image">
+        <h1 class="text-center">TECNOLÓGICO NACIONAL DE MÉXICO <br> INSTITUTO TECNOLÓGICO DE LA PIEDAD</h1>
+    </div>
+
+    <hr>
+
+    <div class="container" id="container">
+        <div class="form-container Datos-personales-container">
+            <h1>Datos personales</h1>
+            <form action="#">
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" class="form-control" placeholder="Ingresa tu nombre"
+                                required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="apellidos">Apellidos</label>
+                            <input type="text" id="apellidos" class="form-control" placeholder="Ingresa tus apellidos"
+                                required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="fecha">Fecha de nacimiento</label>
+                            <input type="text" id="fecha" class="form-control" placeholder="dd/mm/aaaa" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="lugar">Lugar de nacimiento</label>
+                            <input type="text" id="lugar" class="form-control"
+                                placeholder="Ingresa tu lugar de nacimiento" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="inputState">Estado civil</label>
+                            <select id="inputState" class="form-control" required>
+                                <option selected>Soltero</option>
+                                <option>Casado</option>
+                                <option>Divorciado</option>
+                                <option>Viudo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="inputState2">Sexo</label>
+                            <select id="inputState2" class="form-control" required>
+                                <option selected>Ninguno</option>
+                                <option>Masculino</option>
+                                <option>Femenino</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="domicilio">Domicilio</label>
+                            <input type="text" id="domicilio" class="form-control" placeholder="Ingresa tu domicilio"
+                                required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="ciudad">Ciudad</label>
+                            <input type="text" id="ciudad" class="form-control" placeholder="Ingresa tu ciudad"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="est">Estado</label>
+                            <input type="text" id="est" class="form-control" placeholder="Ingresa tu estado" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="cp">Código postal</label>
+                            <input type="text" id="cp" class="form-control" placeholder="Ingresa tu código postal"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="nc">Número de celular</label>
+                            <input type="text" id="nc" class="form-control" placeholder="Ingresa tu número celular"
+                                required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="em">Correo</label>
+                            <input type="email" class="form-control" id="em" placeholder="nombre@ejemplo.com" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="tel">Télefono de casa</label>
+                            <input type="text" id="tel" class="form-control" placeholder="Ingresa télefono de casa">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="neme">Número opcional</label>
+                            <input type="text" id="neme" class="form-control"
+                                placeholder="En caso de emergencia llamar a">
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <div class="form-container Nivel-estudios-container">
+            <h1>Datos nivel de estudio previo</h1>
+            <form action="#">
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="inputState2">Nivel de estudio previo</label>
+                            <select id="inputState2" class="form-control" required>
+                                <option selected>Bachillerato</option>
+                                <option>Licenciatura</option>
+                                <option>Maestria</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="fecha">Nombre de la escuela</label>
+                            <input type="text" id="fecha" class="form-control" placeholder="Introduce el nombre de la escuela" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="lugar">Estado</label>
+                            <input type="text" id="lugar" class="form-control"
+                                placeholder="Ingresa el estado de la escuela" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="fecha">Año de inicio</label>
+                            <input type="text" id="fecha" class="form-control" placeholder="Introduce el año de inicio" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="lugar">Año de terminación</label>
+                            <input type="text" id="lugar" class="form-control"
+                                placeholder="Introduce el año de terminación" required>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div class="paginacion">
+        <ul class="pagination pagination-sm justify-content-center">
+            <li class="page-item"><a class="page-link" id="Anterior" href="#">Anterior</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" id="Siguiente" href="#">Siguiente</a></li>
+        </ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
