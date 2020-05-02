@@ -81,7 +81,7 @@ input {
 .Datos-personales-container {
 	left: 0;
 	width: 100%;
-	z-index: 2;
+	z-index: 3;
 }
 
 .container.right-panel-active .Datos-personales-container {
