@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Ficha de inscripcion</title>
 </head>
 
 <body>
@@ -43,14 +43,14 @@
                 <div class="form-row">
                     <div class="col">
                         <div class="form-group">
-                            <label for="fecha">Fecha de nacimiento</label>
-                            <input type="text" id="fecha" class="form-control" placeholder="dd/mm/aaaa" required>
+                            <label for="fecha_nac">Fecha de nacimiento</label>
+                            <input type="text" id="fecha_nac" class="form-control" placeholder="dd/mm/aaaa" required>
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group">
-                            <label for="lugar">Lugar de nacimiento</label>
-                            <input type="text" id="lugar" class="form-control"
+                            <label for="lugar_nac">Lugar de nacimiento</label>
+                            <input type="text" id="lugar_nac" class="form-control"
                                 placeholder="Ingresa tu lugar de nacimiento" required>
                         </div>
                     </div>
@@ -100,7 +100,8 @@
                     <div class="col">
                         <div class="form-group">
                             <label for="est">Estado</label>
-                            <input type="text" id="est" class="form-control" placeholder="Ingresa tu estado" required>
+                            <input type="text" id="estado" class="form-control" placeholder="Ingresa tu estado"
+                                required>
                         </div>
                     </div>
                 </div>
@@ -116,8 +117,8 @@
 
                     <div class="col">
                         <div class="form-group">
-                            <label for="nc">Número de celular</label>
-                            <input type="text" id="nc" class="form-control" placeholder="Ingresa tu número celular"
+                            <label for="num_cel">Número de celular</label>
+                            <input type="text" id="num_cel" class="form-control" placeholder="Ingresa tu número celular"
                                 required>
                         </div>
                     </div>
@@ -126,20 +127,21 @@
                 <div class="form-row">
                     <div class="col">
                         <div class="form-group">
-                            <label for="em">Correo</label>
-                            <input type="email" class="form-control" id="em" placeholder="nombre@ejemplo.com" required>
+                            <label for="correo">Correo</label>
+                            <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com"
+                                required>
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group">
-                            <label for="tel">Télefono de casa</label>
-                            <input type="text" id="tel" class="form-control" placeholder="Ingresa télefono de casa">
+                            <label for="num_tel">Télefono de casa</label>
+                            <input type="text" id="num_tel" class="form-control" placeholder="Ingresa télefono de casa">
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group">
-                            <label for="neme">Número opcional</label>
-                            <input type="text" id="neme" class="form-control"
+                            <label for="num_opc">Número opcional</label>
+                            <input type="text" id="num_opc" class="form-control"
                                 placeholder="En caso de emergencia llamar a">
                         </div>
                     </div>
@@ -153,8 +155,8 @@
                 <div class="form-row">
                     <div class="col">
                         <div class="form-group">
-                            <label for="inputState2">Nivel de estudio previo</label>
-                            <select id="inputState2" class="form-control" required>
+                            <label for="inputState3">Nivel de estudio previo</label>
+                            <select id="inputState3" class="form-control" required>
                                 <option selected>Bachillerato</option>
                                 <option>Licenciatura</option>
                                 <option>Maestria</option>
@@ -166,14 +168,15 @@
                 <div class="form-row">
                     <div class="col">
                         <div class="form-group">
-                            <label for="fecha">Nombre de la escuela</label>
-                            <input type="text" id="fecha" class="form-control" placeholder="Introduce el nombre de la escuela" required>
+                            <label for="nom_escuela">Nombre de la escuela</label>
+                            <input type="text" id="nom_escuela" class="form-control"
+                                placeholder="Introduce el nombre de la escuela" required>
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group">
-                            <label for="lugar">Estado</label>
-                            <input type="text" id="lugar" class="form-control"
+                            <label for="estado_escuela">Estado</label>
+                            <input type="text" id="estado_escuela" class="form-control"
                                 placeholder="Ingresa el estado de la escuela" required>
                         </div>
                     </div>
@@ -182,29 +185,80 @@
                 <div class="form-row">
                     <div class="col">
                         <div class="form-group">
-                            <label for="fecha">Año de inicio</label>
-                            <input type="text" id="fecha" class="form-control" placeholder="Introduce el año de inicio" required>
+                            <label for="anio_inicio">Año de inicio</label>
+                            <input type="text" id="anio_inicio" class="form-control"
+                                placeholder="Introduce el año de inicio" required>
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group">
-                            <label for="lugar">Año de terminación</label>
-                            <input type="text" id="lugar" class="form-control"
+                            <label for="anio_term">Año de terminación</label>
+                            <input type="text" id="anio_term" class="form-control"
                                 placeholder="Introduce el año de terminación" required>
                         </div>
                     </div>
                 </div>
-
+            </form>
+        </div>
+        <div class="form-container Datos-socioeconomicos-container">
+            <h1>Datos socioeconómicos</h1>
+            <form action="">
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label>¿Formas parte un grupo indígena?</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <input class="checkboxes" type="checkbox" name="checkbox" id="checkbox1">
+                            <label for="checkbox1">Si</label>
+                            <input class="checkboxes" type="checkbox" name="checkbox2" id="checkbox2">
+                            <label for="checkbox2">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label>Discapacidad</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <input class="checkboxes" type="checkbox" name="checkbox" id="checkbox1">
+                            <label for="checkbox1">Si</label>
+                            <input class="checkboxes" type="checkbox" name="checkbox2" id="checkbox2">
+                            <label for="checkbox2">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label>Beneficiario del programa prospera o PAL</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <input class="checkboxes" type="checkbox" name="checkbox" id="checkbox1">
+                            <label for="checkbox1">Si</label>
+                            <input class="checkboxes" type="checkbox" name="checkbox2" id="checkbox2">
+                            <label for="checkbox2">No</label>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
     <div class="paginacion">
         <ul class="pagination pagination-sm justify-content-center">
-            <li class="page-item"><a class="page-link" id="Anterior" href="#">Anterior</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" id="Siguiente" href="#">Siguiente</a></li>
+            <li class="page-item"><a class="page-link cursor-mano" id="Anterior">Anterior</a></li>
+            <li class="page-item"><a class="page-link cursor-mano" id="uno" onclick=uno()>1</a></li>
+            <li class="page-item"><a class="page-link cursor-mano" id="dos" onclick=dos()>2</a></li>
+            <li class="page-item"><a class="page-link cursor-mano" id="tres" onclick=tres()>3</a></li>
+            <li class="page-item"><a class="page-link cursor-mano" id="cuatro">4</a></li>
+            <li class="page-item"><a class="page-link cursor-mano" id="Siguiente">Siguiente</a></li>
         </ul>
     </div>
     <script src="main.js"></script>
