@@ -66,5 +66,5 @@ app.listen(app.get('port'), () => {
     console.log(`Server on port ${app.get('port')}`);
 });
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(path.resolve(__dirname,'index.html'));
 });
