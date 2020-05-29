@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/styles.css">
+    <title>Ficha de inscripcion</title>
+</head>
+
+<body>
+    <div class="container-sm top">
+        <img src="public/img/logo-TecLP.png" class="img-fluid cabecera"
+            style="float: left;" alt="Responsive image">
+        <img src="public/img/logo-TecNM.png" class="img-fluid cabecera "
+            style="float: right;" alt="Responsive image">
+        <h1 class="text-center">TECNOLÓGICO NACIONAL DE MÉXICO <br> INSTITUTO TECNOLÓGICO DE LA PIEDAD</h1>
+    </div>
+
+    <hr>
+    <div class="container" id="container">
+        <div class="form-container Datos-personales-container">
+            <form action="/datos_personales" method="POST">
+                <h1>Datos personales</h1>
+                <hr>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input name="nombre" type="text" id="nombre" class="form-control"
+                                placeholder="Ingresa tu nombre" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="apellidos">Apellidos</label>
+                            <input name="apellidos" type="text" id="apellidos" class="form-control"
+                                placeholder="Ingresa tus apellidos" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="fecha_nac">Fecha de nacimiento</label>
+                            <input name="fecha_nac" type="text" id="fecha_nac" class="form-control"
+                                placeholder="aaaa-mm-dd" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="lugar_nac">Lugar de nacimiento</label>
+                            <input name="lugar_nac" type="text" id="lugar_nac" class="form-control"
+                                placeholder="Ingresa tu lugar de nacimiento" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="estado_civil">Estado civil</label>
+                            <select name="estado_civil" id="estado_civil" class="form-control" required>
+                                <option selected>Soltero</option>
+                                <option>Casado</option>
+                                <option>Divorciado</option>
+                                <option>Viudo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="sexo">Sexo</label>
+                            <select name="sexo" id="sexo" class="form-control" required>
+                                <option selected>Ninguno</option>
+                                <option>Masculino</option>
+                                <option>Femenino</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="domicilio">Domicilio</label>
+                            <input name="domicilio" type="text" id="domicilio" class="form-control"
+                                placeholder="Ingresa tu domicilio" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="ciudad">Ciudad</label>
+                            <input name="ciudad" type="text" id="ciudad" class="form-control"
+                                placeholder="Ingresa tu ciudad" required>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="estado">Estado</label>
+                            <input name="estado" type="text" id="estado" class="form-control"
+                                placeholder="Ingresa tu estado" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="cod_postal">Código postal</label>
+                            <input name="cod_postal" type="text" id="cod_postal" class="form-control"
+                                placeholder="Ingresa tu código postal" required>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="num_celular">Número de celular</label>
+                            <input name="num_celular" type="text" id="num_celular" class="form-control"
+                                placeholder="Ingresa tu número celular" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="correo">Correo</label>
+                            <input name="correo" type="email" class="form-control" id="correo"
+                                placeholder="nombre@ejemplo.com" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="tel_casa">Télefono de casa</label>
+                            <input name="tel_casa" type="text" id="tel_casa" class="form-control"
+                                placeholder="Ingresa télefono de casa">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="num_opc">Número opcional</label>
+                            <input name="num_opc" type="text" id="num_opc" class="form-control"
+                                placeholder="En caso de emergencia llamar a">
+                        </div>
+                    </div>
+
+                </div>
+                <input style="width: auto; margin-left: 45%;" class="btn btn-primary" type="submit" value="Enviar">
+            </form>
+        </div>
+        <div class="form-container Nivel-estudios-container">
+            <form action="/nivel_estudios" method="POST">
+                <h1>Datos nivel de estudio previo</h1>
+                <hr>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="nivel_estudio">Nivel de estudio previo</label>
+                            <select name="nivel_estudio" id="nivel_estudio" class="form-control" required>
+                                <option selected>Bachillerato</option>
+                                <option>Licenciatura</option>
+                                <option>Maestria</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="nom_escuela">Nombre de la escuela</label>
+                            <input name="nom_escuela" type="text" id="nom_escuela" class="form-control"
+                                placeholder="Introduce el nombre de la escuela" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="estado_escuela">Estado</label>
+                            <input name="estado_escuela" type="text" id="estado_escuela" class="form-control"
+                                placeholder="Ingresa el estado de la escuela" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="anio_inicio">Año de inicio</label>
+                            <input name="anio_inicio" type="text" id="anio_inicio" class="form-control"
+                                placeholder="Introduce el año de inicio" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="anio_term">Año de terminación</label>
+                            <input name="anio_term" type="text" id="anio_term" class="form-control"
+                                placeholder="Introduce el año de terminación" required>
+                        </div>
+                    </div>
+                </div>
+                <h1>Carrera</h1>
+                <hr>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="carrera">Carrera a cursar</label>
+                            <input name="carrera" style="width: 50%;" type="text" id="carrera" class="form-control"
+                                placeholder="Ingresa la carrera a cursar" required>
+                        </div>
+                    </div>
+                </div>
+                <input style="width: auto; margin-left: 45%;" class="btn btn-primary" type="submit" value="Enviar">
+            </form>
+        </div>
+        <div class="form-container Datos-socioeconomicos-container">
+            <form action="datos_socioeconomicos" method="POST">
+                <h1>Datos socioeconómicos</h1>
+                <hr>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label>¿Formas parte un grupo indígena?</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <input name="grp_ind" value="si" class="checkboxes" type="checkbox" id="checkbox1">
+                            <label for="checkbox1">Si</label>
+                            <input name="grp_ind" value="no" class="checkboxes" type="checkbox" id="checkbox2">
+                            <label for="checkbox2">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label>Discapacidad</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <input name="discapacidad" value="si" class="checkboxes" type="checkbox" id="checkbox1">
+                            <label for="checkbox1">Si</label>
+                            <input name="discapacidad" value="no" class="checkboxes" type="checkbox" id="checkbox2">
+                            <label for="checkbox2">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label>Beneficiario del programa prospera o PAL</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <input name="prospera" value="si" class="checkboxes" type="checkbox" id="checkbox1">
+                            <label for="checkbox1">Si</label>
+                            <input name="prospera" value="no" class="checkboxes" type="checkbox" id="checkbox2">
+                            <label for="checkbox2">No</label>
+                        </div>
+                    </div>
+                </div>
+                <input style="width: auto; margin-left: 45%;" class="btn btn-primary" type="submit" value="Enviar">
+            </form>
+        </div>
+        <div class="form-container Documentos-container">
+            <form action="/subir" method="POST" enctype="multipart/form-data">
+                <h1>Documentación</h1>
+                <hr>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label style="font-weight: bold;" for="">Copia</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label style="font-weight: bold;" for="">Original</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label style="font-weight: bold;" for="">Documentos para archivo escolar</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label style="font-weight: bold;" for="">cumplimiento</label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">1</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">1*</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">Certificado de bachillerato</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                              <input name="documento1" type="file" class="custom-file-input" id="documento" required>
+                              <label class="custom-file-label" for="documento">Buscar</label>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">1</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">1*</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">Acta de nacimiento</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                              <input name="documento2" type="file" class="custom-file-input" id="documento" required>
+                              <label class="custom-file-label" for="documento">Buscar</label>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for=""></label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">1</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">CURP</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                              <input name="documento3" type="file" class="custom-file-input" id="documento" required>
+                              <label class="custom-file-label" for="documento">Buscar</label>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for=""></label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">1</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">2 fotografias tamaño infantil recientes</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                              <input name="documento4" type="file" class="custom-file-input" id="documento" required>
+                              <label class="custom-file-label" for="documento">Buscar</label>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">1</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">1*</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">Comprobante de pago por concepto de inscripcion</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                              <input name="documento5" type="file" class="custom-file-input" id="documento" required>
+                              <label class="custom-file-label" for="documento">Buscar</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for=""></label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">1</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">Certificado medico</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                              <input name="documento6" type="file" class="custom-file-input" id="documento" required>
+                              <label class="custom-file-label" for="documento">Buscar</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for=""></label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">1</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">Contrato ITLapiedad</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                              <input name="documento7" type="file" class="custom-file-input" id="documento" required>
+                              <label class="custom-file-label" for="documento">Buscar</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">1</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">1*</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">Dictamen de equivalencia de bachillerato (cuando aplique)</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                              <input name="documento8" type="file" class="custom-file-input" id="documento" required>
+                              <label class="custom-file-label" for="documento">Buscar</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for=""></label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">1</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="">Formato de asignacion de numeros de seguridad social</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                              <input name="documento9" type="file" class="custom-file-input" id="documento" required>
+                              <label class="custom-file-label" for="documento">Buscar</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <p>*Original para cotejo</p>
+                <p>Para uso exclusivo del departamento de servicios escolares</p>
+                <input style="width: auto; margin-left: 45%;" class="btn btn-primary" type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <div class="paginacion">
+        <ul class="pagination pagination-sm justify-content-center">
+            <li class="page-item"><a class="page-link cursor-mano" id="Anterior">Anterior</a></li>
+            <li class="page-item"><a class="page-link cursor-mano" id="uno" onclick=uno()>1</a></li>
+            <li class="page-item"><a class="page-link cursor-mano" id="dos" onclick=dos()>2</a></li>
+            <li class="page-item"><a class="page-link cursor-mano" id="tres" onclick=tres()>3</a></li>
+            <li class="page-item"><a class="page-link cursor-mano" id="cuatro" onclick=cuatro()>4</a></li>
+            <li class="page-item"><a class="page-link cursor-mano" id="Siguiente">Siguiente</a></li>
+        </ul>
+    </div>
+    <script src="public/animations.js"></script>
+</body>
+
+</html>
