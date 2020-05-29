@@ -45,7 +45,7 @@ dbEvents.on('error', err => {
 });
 
 //puerto
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT);
 //middlewares
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
