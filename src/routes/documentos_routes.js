@@ -3,7 +3,7 @@ const router = Router();
 
 router.post('/subir', (req, res) => {
     console.log(req.file);
-    res.send('Listo');
+    res.redirect('/');
 });
 
 module.exports = router;
