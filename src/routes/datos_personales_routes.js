@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const datos_personales_Controller = require('../controllers/datos_personales_Controller');
+const datos_personales_Controller = require('../controllers/datos_personales_controller');
 
 router.get('/', datos_personales_Controller.list_datos_personales);
 router.get('/:alumnoId',datos_personales_Controller.get_datos_personales);
