@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fichateclp.000webhostapp.com/public/css/styles.css">
+    <link rel="icon" type="image/png" href="https://fichateclp.000webhostapp.com/public/img/pic-tec.png" />
     <title>Ficha de inscripcion</title>
 </head>
 
@@ -226,7 +227,7 @@
             </form>
         </div>
         <div class="form-container Datos-socioeconomicos-container">
-            <form action="datos_socioeconomicos" method="POST">
+            <form action="/datos_socioeconomicos" method="POST">
                 <h1>Datos socioeconómicos</h1>
                 <hr>
                 <div class="form-row">
@@ -237,9 +238,9 @@
                     </div>
                     <div class="col">
                         <div class="form-group">
-                            <input name="grp_ind" value="si" class="checkboxes" type="radio" id="grp_ind1">
+                            <input name="grp_ind" value="si" class="checkboxes" type="radio" id="grp_ind1" required>
                             <label for="checkbox1">Si</label>
-                            <input name="grp_ind" value="no" class="checkboxes" type="radio" id="grp_ind2">
+                            <input name="grp_ind" value="no" class="checkboxes" type="radio" id="grp_ind2" required>
                             <label for="checkbox2">No</label>
                         </div>
                     </div>
@@ -252,9 +253,9 @@
                     </div>
                     <div class="col">
                         <div class="form-group">
-                            <input name="discapacidad" value="si" class="checkboxes" type="radio" id="checkbox1">
+                            <input name="discapacidad" value="si" class="checkboxes" type="radio" id="checkbox1" required>
                             <label for="checkbox1">Si</label>
-                            <input name="discapacidad" value="no" class="checkboxes" type="radio" id="checkbox2">
+                            <input name="discapacidad" value="no" class="checkboxes" type="radio" id="checkbox2" required>
                             <label for="checkbox2">No</label>
                         </div>
                     </div>
@@ -267,9 +268,9 @@
                     </div>
                     <div class="col">
                         <div class="form-group">
-                            <input name="prospera" value="si" class="checkboxes" type="radio" id="checkbox1">
+                            <input name="prospera" value="si" class="checkboxes" type="radio" id="checkbox1" required>
                             <label for="checkbox1">Si</label>
-                            <input name="prospera" value="no" class="checkboxes" type="radio" id="checkbox2">
+                            <input name="prospera" value="no" class="checkboxes" type="radio" id="checkbox2" required>
                             <label for="checkbox2">No</label>
                         </div>
                     </div>

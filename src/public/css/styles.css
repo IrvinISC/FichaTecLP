@@ -20,7 +20,9 @@ body {
 	align-items: center;
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
-	height: 1000px;
+	position: absolute;
+	height: 200%;
+	width: 100%;
 	margin: -20px 0 50px;
 }
 
@@ -31,12 +33,6 @@ h1 {
 	text-align: center;
 }
 
-h2 {
-	text-align: center;
-}
-.checkbox{
-	position: relative;
-}
 .cursor-mano{
 	cursor: pointer;
 }
@@ -66,10 +62,13 @@ form {
 
 input {
 	background-color: #eee;
-	border: none;
 	padding: 12px 15px;
 	margin: 8px 0;
 	width: 100%;
+}
+
+.checkboxes{
+	width: 25px;
 }
 
 .container {
@@ -84,10 +83,6 @@ input {
 	height: 100%;
 }
 
-.checkboxes{
-	width: 25px;
-}
-
 .form-container {
 	position: absolute;
 	top: 0;
@@ -98,130 +93,88 @@ input {
 .Datos-personales-container {
 	left: var(--posicion-x-panel1);
 	width: 100%;
-	z-index: 10;
 }
 
 .container.right-panel-active-1 .Datos-personales-container {
 	transform: translateX(var(--posicion-x-panel4));
 	animation: show 0.6s;
-	z-index: 2;
 }
 .container.right-panel-active-2 .Datos-personales-container {
 	transform: translateX(var(--posicion-x-panel3));
 	animation: show 0.6s;
-	z-index: 2;
 }
 .container.right-panel-active-3 .Datos-personales-container{
 	transform: translateX(var(--posicion-x-panel2));
 	animation: show 0.6s;
-	z-index: 2;
 }
 
 .Nivel-estudios-container {
 	left: var(--posicion-x-panel2);
 	width: 100%;
-	opacity: 1;
-	z-index: 8;
 }
 
 .container.right-panel-active-1 .Nivel-estudios-container {
 	left: 0;
 	transform: translateX(var(--posicion-x-panel1));
-	opacity: 1;
-	z-index: 3;
 	animation: show 0.6s;
 }
 .container.right-panel-active-2 .Nivel-estudios-container {
 	left: 0;
 	transform: translateX(var(--posicion-x-panel4));
-	opacity: 1;
-	z-index: 3;
 	animation: show 0.6s;
 }
 .container.right-panel-active-3 .Nivel-estudios-container {
 	left: 0;
 	transform: translateX(var(--posicion-x-panel3));
-	opacity: 1;
-	z-index: 3;
 	animation: show 0.6s;
 }
 
 .Datos-socioeconomicos-container{
 	left: var(--posicion-x-panel3);
 	width: 100%;
-	opacity: 1;
-	z-index: 7;
 }
 
 .container.right-panel-active-1 .Datos-socioeconomicos-container{
 	left: 0;
 	transform: translateX(var(--posicion-x-panel2));
 	animation: show 0.6s;
-	z-index: 10;
 }
 .container.right-panel-active-2 .Datos-socioeconomicos-container{
 	left: 0;
 	transform: translateX(var(--posicion-x-panel1));
 	animation: show 0.6s;
-	z-index: 10;
 }
 .container.right-panel-active-3 .Datos-socioeconomicos-container{
 	left: 0;
 	transform: translateX(var(--posicion-x-panel4));
 	animation: show 0.6s;
-	z-index: 10;
 }
 .Documentos-container{
 	left: var(--posicion-x-panel4);
 	width: 100%;
-	z-index: 7;
 }
 .container.right-panel-active-1 .Documentos-container{
 	left: 0;
 	transform: translateX(var(--posicion-x-panel3));
 	animation: show 0.6s;
-	z-index: 10;
 }
 .container.right-panel-active-2 .Documentos-container{
 	left: 0;
 	transform: translateX(var(--posicion-x-panel2));
 	animation: show 0.6s;
-	z-index: 10;
 }
 .container.right-panel-active-3 .Documentos-container{
 	left: 0;
 	transform: translateX(var(--posicion-x-panel1));
 	animation: show 0.6s;
-	z-index: 10;
 }
 @keyframes show {
 	0%, 49.99% {
-		opacity: 0;
+		opacity: 1;
 		z-index: 1;
 	}
-	
 	50%, 100% {
-		opacity: 0;
-		z-index: 0;
-	}
-	100%, 0%{
 		opacity: 0.5;
-		z-index: 1;
-	}
-	200%, 0%{
-		opacity: 0.5;
-		z-index: 1;
-	}
-	0%, 200%{
-		opacity: 0.5;
-		z-index: 1;
-	}
-	300%, 0%{
-		opacity: 0.5;
-		z-index: 1;
-	}
-	0%, 300%{
-		opacity: 0.5;
-		z-index: 1;
+		z-index: 5;
 	}
 }
