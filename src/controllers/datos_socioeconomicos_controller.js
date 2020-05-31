@@ -1,30 +1,30 @@
-const Alumno = require('../models/datos_socioeconomicos');
+const datos_socioeconomicos = require('../models/datos_socioeconomicos');
 
 module.exports = {
     list_datos_socioeconomicos: async (req, res, next) => {
-        const alumnos = await Alumno.find()
-        res.json(alumnos);
+        const registro = await datos_socioeconomicos.find()
+        res.json(registro);
     },
     create_datos_socioeconomicos: async (req, res, next) => {
-        const nuevoAlumno = new Alumno(req.body);
-        const alumno = await nuevoAlumno.save();
-        //res.json(alumno);
+        const nuevoRegistro = new datos_socioeconomicos(req.body);
+        const registro = await nuevoRegistro.save();
+        //res.json(registro);
         res.redirect('/');
     },
     get_datos_socioeconomicos: async (req, res, next) => {
-        const {alumnoId} = req.params;
-        const alumno = await Alumno.findById(alumnoId);
-        res.json(alumno);
+        const {Id} = req.params;
+        const registro = await datos_socioeconomicos.findById(Id);
+        res.json(registro);
     },
     update_datos_socioeconomicos: async (req, res, next) => {
-        const {alumnoId} = req.params;
-        const nuevoAlumno = req.body;
-        const antAlumno = await Alumno.findByIdAndUpdate(alumnoId, nuevoAlumno);
+        const {Id} = req.params;
+        const nuevoRegistro = req.body;
+        const antRegistro = await datos_socioeconomicos.findByIdAndUpdate(Id, nuevoRegistro);
         res.json({success: true});
     },
     delete_datos_socioeconomicos: async (req, res, next) => {
-        const {alumnoId} = req.params;
-        const antAlumno = await Alumno.findByIdAndDelete(alumnoId);
+        const {Id} = req.params;
+        const antRegistro = await datos_socioeconomicos.findByIdAndDelete(Id);
         res.json({success: true});
     }
 }

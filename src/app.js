@@ -10,14 +10,9 @@ const app = express();
 const dbUri = process.env.MONGODB_URI;
 const dbEvents = mongoose.connection;
 
-const { v4: uuidv4 } = require("uuid");
 const multer = require('multer');
 const path = require('path');
 const storage = multer.diskStorage({
-    destination: path.join(__dirname, 'public/uploads'),
-    filename: (req, file, cb) => {
-        cb(null, uuidv4() + path.extname(file.originalname).toLocaleLowerCase());
-    },
     fileFilter: (req, file, next) => {
         const filterTypes = /jpg|jpeg|png|gif|pdf/;
         const filetype = filterTypes.test(file.mimetype);
@@ -49,13 +44,21 @@ dbEvents.on('error', err => {
 app.set('port', process.env.PORT);
 //middlewares
 app.use(morgan('dev'));
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(multer(
     {
         storage,
         limits: { fileSize: 1000000 }
-    }).any('documento1', 'documento2', 'documento3', 'documento4', 'documento5', 'documento6', 'documento7', 'documento8', 'documento9'));
+    }).any('documento1', 
+    'documento2', 
+    'documento3', 
+    'documento4', 
+    'documento5', 
+    'documento6', 
+    'documento7', 
+    'documento8', 
+    'documento9'));
 
 //rutas
 app.use('/datos_personales', datos_personalesRoutes);
